@@ -1,0 +1,166 @@
+# depslib dependency file v1.0
+1399853725 source:c:\users\mqguilherme\desktop\estudos\projetos c\grafo\grafo.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1400118431 c:\users\mqguilherme\desktop\estudos\projetos c\grafo\grafo.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1400108351 source:c:\users\mqguilherme\desktop\estudos\projetos c\grafo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1399864226 c:\users\mqguilherme\desktop\estudos\projetos c\grafo\grafo.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1400118214 c:\users\mqguilherme\desktop\estudos\projetos c\grafo\lista.h
+	<stdio.h>
+	<stdlib.h>
+
+1401458882 source:c:\users\mqguilherme\dropbox\grafos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1401458646 c:\users\mqguilherme\dropbox\grafos\grafo.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1401450336 c:\users\mqguilherme\dropbox\grafos\lista.h
+	<stdio.h>
+	<stdlib.h>
+
+1401450349 source:c:\users\mqguilherme\dropbox\grafos\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1401458769 source:c:\users\mqguilherme\dropbox\grafos\grafo.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1401472972 source:c:\users\613031075\downloads\grafos\grafos\grafo.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1401471312 c:\users\613031075\downloads\grafos\grafos\grafo.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1401471312 c:\users\613031075\downloads\grafos\grafos\lista.h
+	<stdio.h>
+	<stdlib.h>
+
+1401471312 source:c:\users\613031075\downloads\grafos\grafos\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1401473013 source:c:\users\613031075\downloads\grafos\grafos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1401471312 source:c:\users\mqguilherme\dropbox\grafos\grafos\grafos\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1401471312 c:\users\mqguilherme\dropbox\grafos\grafos\grafos\lista.h
+	<stdio.h>
+	<stdlib.h>
+
+1401549178 source:c:\users\mqguilherme\dropbox\grafos\grafos\grafos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1401471312 c:\users\mqguilherme\dropbox\grafos\grafos\grafos\grafo.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1401471312 source:c:\users\paulo cesar\documents\projetos codeblocks\grafos\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1401471312 c:\users\paulo cesar\documents\projetos codeblocks\grafos\lista.h
+	<stdio.h>
+	<stdlib.h>
+
+1401568247 source:c:\users\paulo cesar\documents\projetos codeblocks\grafos\grafo.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1401568181 c:\users\paulo cesar\documents\projetos codeblocks\grafos\grafo.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1401564927 source:c:\users\paulo cesar\documents\projetos codeblocks\grafos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1402077964 source:e:\grafos\grafo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"grafo.h"
+
+1401982676 e:\grafos\grafo.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1401471314 e:\grafos\lista.h
+	<stdio.h>
+	<stdlib.h>
+
+1401471314 source:e:\grafos\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1402076130 source:e:\grafos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"grafo.h"
+
+1401471314 source:f:\grafos\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1401471314 f:\grafos\lista.h
+	<stdio.h>
+	<stdlib.h>
+
+1401801470 source:f:\grafos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
+1401800504 f:\grafos\grafo.h
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1401824288 source:f:\grafos\grafo.c
+	<stdio.h>
+	<stdlib.h>
+	"grafo.h"
+
