@@ -89,24 +89,24 @@ int main()
                     printf("Grafo nao carregado!\n");
                 }
                 break;
-            case 7:
-               if(novo){
-                    char novoNome[101];
-                    sprintf(novoNome,"%s%s","novo-",nomeArquivo);
-                    if(testa_conexo(novo)){
-                        printf("Grafo Conexo\n");
-                        pontes(novo,novoNome);
-                        printf("Arquivo pontes.txt criado!\n");
-                    }else{
-                        printf("Grafo Nao conexo\n");
-                        formar_grupos(novo);
-                        printf("Arquivo componentes.txt criado!\n");
-                    }
-                }else{
-                    printf("Grafo nao carregado!\n");
-                }
-                printf("\n");
-                break;
+//            case 7:
+//               if(novo){
+//                    char novoNome[101];
+//                    sprintf(novoNome,"%s%s","novo-",nomeArquivo);
+//                    if(testa_conexo(novo)){
+//                        printf("Grafo Conexo\n");
+//                        pontes(novo,novoNome);
+//                        printf("Arquivo pontes.txt criado!\n");
+//                    }else{
+//                        printf("Grafo Nao conexo\n");
+//                        formar_grupos(novo);
+//                        printf("Arquivo componentes.txt criado!\n");
+//                    }
+//                }else{
+//                    printf("Grafo nao carregado!\n");
+//                }
+//                printf("\n");
+//                break;
             case 8:
                 if(novo)
                     libera(novo);
