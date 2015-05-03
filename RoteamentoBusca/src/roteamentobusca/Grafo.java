@@ -12,30 +12,6 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Grafo {
-    public class Vertice {
-        String nome;
-        List<Aresta> adj;
-
-        Vertice(String nome) {
-            this.nome = nome;
-            this.adj = new ArrayList<Aresta>();
-        }
-
-        void addAdj(Aresta e) {
-            adj.add(e);
-        }
-    }
-
-    public class Aresta {
-        Vertice origem;
-        Vertice destino;
-
-        Aresta(Vertice origem, Vertice destino) {
-            this.origem = origem;
-            this.destino = destino;
-        }
-    }
-
     List<Vertice> vertices;
     List<Aresta> arestas;
 
@@ -49,13 +25,24 @@ public class Grafo {
         vertices.add(v);
         return v;
     }
-
-    Aresta addAresta(Vertice origem, Vertice destino) {
-        Aresta e = new Aresta(origem, destino);
-        origem.addAdj(e);
-        arestas.add(e);
-        return e;
+   
+    void addAresta(Vertice origem, Vertice destino, int custo) {// uma aresta a-b é igual a uma b-a
+        Aresta a = new Aresta(origem, destino, custo);
+        Aresta b = new Aresta(destino, origem, custo);
+        origem.addAdj(a);
+        destino.addAdj(b);
+        arestas.add(a);
+        arestas.add(b);
+        
     }
+    
+    public List<Vertice> buscaFronteira(Vertice v){
+            List<Vertice> fronteira=new ArrayList<Vertice>();
+            for (int i = 0; i < v.adj.size(); i++) {
+                fronteira.add(v.adj.get(i).destino);
+            }
+            return fronteira;
+        }
 
     public String toString() {
         String r = "";
@@ -75,11 +62,15 @@ public class Grafo {
         Vertice s = g.addVertice("s");
         Vertice t = g.addVertice("t");
         Vertice y = g.addVertice("y");
-        Aresta st = g.addAresta(s, t);
-        Aresta sy = g.addAresta(s, y);
-        Aresta ty = g.addAresta(t, y);
-        Aresta yt = g.addAresta(y, t);
-        //t.adj.add(st);
+        Vertice v = g.addVertice("v");
+        Vertice d = g.addVertice("d");
+        Vertice u = g.addVertice("u");
+        g.addAresta(s, t , 10);
+        g.addAresta(s, y, 20);
+        g.addAresta(t, y, 30);
+        g.addAresta(t, v, 40);
+        g.addAresta(y, d, 50);
+        g.addAresta(v, u, 60);
         System.out.println(g);
     }
 }

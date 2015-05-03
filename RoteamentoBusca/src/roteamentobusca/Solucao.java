@@ -5,11 +5,16 @@
  */
 package roteamentobusca;
 
-/**
- *
- * @author Guilherme
- */
-public class RoteamentoBusca {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Solucao{
+    int custoTotal;
+    List<Vertice> caminho;
     
-    
+    Solucao(){
+        custoTotal =0;
+        caminho = new ArrayList<>();
+    }
 }
+
