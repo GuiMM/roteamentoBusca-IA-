@@ -14,38 +14,7 @@ import java.util.List;
  * @author Guilherme
  */
 public class RoteamentoBusca {
-//    public Solucao caminhoGuloso(Grafo grafo, Vertice atual, Vertice destino){
-//        ArrayList<Vertice> visitados = new ArrayList<Vertice>();
-//        return gulosoDeFato( grafo,  visitados,  atual,  destino, 0);
-//    
-//    }
-//    
-//    private Solucao gulosoDeFato(Grafo grafo, ArrayList<Vertice> visitados, Vertice atual, Vertice destino, int custoColetado ){
-//        Solucao solucao = new Solucao();
-//        int melhorCusto =0;
-//        ArrayList<Vertice> fronteira;                //guardará os ve´tices que fazem fronteira com o vertice atual
-//        visitados.add(atual);                        //bota o vertice atual na lista de vertices já visitados.
-//        ArrayList caminho = visitados;      
-//        if (atual==destino) {
-//            solucao.setCaminho(caminho);
-//            solucao.setCustoTotal(custoColetado);
-//            return solucao;
-//        }else{
-//            fronteira = calculaFronteira(atual);
-//            fronteira = eliminaVisitados(fronteira,visitados);
-//            fronteira = ordenaFronteira(grafo, atual, fronteira);
-//        
-//            //melhorCusto=grafo.buscaAresta(atual , fronteira.get(0));          //começamos a ideia de colher o melhor caminho(o de menor custo)apartir da busca pela aresta atual ->fronteira.get(i)
-//            for (int i = 0; i < fronteira.size(); i++) {
-//                melhorCusto=grafo.getAresta(atual , fronteira.get(i)).custo;        //pega o custo do caminho para o proximo vertice da fronteira(lebrando que a fronteira foi ordenada pelo seu custo)
-//                custoColetado +=melhorCusto; 
-//                return gulosoDeFato(grafo,visitados,fronteira.get(i),destino,custoColetado);
-//            }
-//        
-//    
-//        }
-//        
-//    }
+
     public Solucao buscaProfundidade(Grafo grafo, Vertice atual, Vertice destino){
         ArrayList<Vertice> visitados = new ArrayList<Vertice>();
         ArrayList<Vertice> caminho = new ArrayList<Vertice>();
@@ -82,25 +51,6 @@ public class RoteamentoBusca {
         
         return caminho;                                                         //dibre do dibre dibroso, nao sei como funciona (dibre).                        
     }
-//    public ArrayList<Vertice> larguraIterativa(Grafo grafo, ArrayList<Vertice> visitados, Vertice origem, Vertice destino){
-//        ArrayList<Vertice> caminho = new ArrayList<>();
-//        Vertice atual = origem;
-//        caminho.add(atual);
-//        while(caminho.get(caminho.size()-1)!=destino){
-//            ArrayList<Vertice> fronteira;
-//            fronteira = calculaFronteira(atual);
-//            fronteira = eliminaVisitados(fronteira,visitados);
-//            while(fronteira.size()!=0){
-//                if (fronteira.get(0)==destino) {
-//                    caminho.add(destino);
-//                    return caminho;
-//                }
-//                fronteira.remove(fronteira.get(0));
-//            }
-//        
-//        }
-//        return caminho;
-//    }
 
     private ArrayList<Vertice> calculaFronteira(Vertice atual) {
         ArrayList<Vertice> fronteira = new ArrayList<>();                //guardará os vértices que fazem fronteira com o vertice atual
