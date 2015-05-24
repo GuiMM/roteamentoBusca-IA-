@@ -16,5 +16,21 @@ public class Solucao{
         custoTotal =0;
         caminho = new ArrayList<>();
     }
+
+    public void setCustoTotal(int custoTotal) {
+        this.custoTotal = custoTotal;
+    }
+
+    public void setCaminho(List<Vertice> caminho) {
+        this.caminho = caminho;
+    }
+
+    public int getCustoTotal() {
+        return custoTotal;
+    }
+
+    public List<Vertice> getCaminho() {
+        return caminho;
+    }
 }
 

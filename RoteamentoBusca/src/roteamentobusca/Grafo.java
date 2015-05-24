@@ -35,6 +35,15 @@ public class Grafo {
         arestas.add(b);
         
     }
+
+    public Aresta getAresta(Vertice a, Vertice b) {
+        for (Aresta arestaAtual: arestas) {                                      //passando por todas as arestas do vertice atual
+            if (arestaAtual.origem==a&arestaAtual.destino==b | arestaAtual.origem==a&arestaAtual.destino==b) {
+                return arestaAtual;
+            }
+        }
+        return null;
+    }
     
     public List<Vertice> buscaFronteira(Vertice v){
             List<Vertice> fronteira=new ArrayList<Vertice>();
@@ -59,18 +68,22 @@ public class Grafo {
 
     public static void main(String[] args) {
         Grafo g = new Grafo();
+        RoteamentoBusca aux = new RoteamentoBusca();
+        Solucao resp;
         Vertice s = g.addVertice("s");
         Vertice t = g.addVertice("t");
         Vertice y = g.addVertice("y");
         Vertice v = g.addVertice("v");
         Vertice d = g.addVertice("d");
         Vertice u = g.addVertice("u");
-        g.addAresta(s, t , 10);
-        g.addAresta(s, y, 20);
+        g.addAresta(s, t , 15);
+        //g.addAresta(s, y, 20);
         g.addAresta(t, y, 30);
         g.addAresta(t, v, 40);
         g.addAresta(y, d, 50);
         g.addAresta(v, u, 60);
         System.out.println(g);
+        resp = aux.buscaProfundidade(g, u, d);
+        System.out.println(resp.custoTotal);
     }
 }
